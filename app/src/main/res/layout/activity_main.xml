@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="#009688"
+        android:gravity="center|left"
+        android:paddingLeft="10sp"
+        android:text="lab1 - GUI"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameField"
+        android:layout_alignBottom="@+id/nameField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="10sp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/surnameField"
+        android:layout_alignBottom="@+id/surnameField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="10sp"
+        android:text="Surname"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numberOfMarksField"
+        android:layout_alignBottom="@+id/numberOfMarksField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:paddingHorizontal="10sp"
+        android:text="Number of marks"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="Put name"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="#000000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/surnameField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="14dp"
+        android:hint="Put surname"
+        android:textColor="#000000" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/numberOfMarksField"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="15dp"
+        android:hint="Put number of marks 5-15"
+        android:maxLines="1"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/marksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#8EA9B5"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="#CFCFCF"
+        android:text="Marks"
+        android:textColor="#000000"
+        android:textColorHighlight="#9C27B0"
+        android:visibility="invisible"
+        app:rippleColor="#86E3DA"
+        app:strokeColor="#00000000" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignBottom="@+id/marksButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="55dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
